@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Milton E-commerce Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="headerpro">
+    <nav>
+      <ul>
+        <li class="headbutt"><a href="index.html">Home</a></li>
+        <li class="headbutt"><a href="product.html">Products</a></li>
+        <li class="headbutt"><a href="about.html">About Us</a></li>
+        <li class="headbutt"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="herous">
+      <h1>Get In Touch With Us</h1>
+      <p> <h2 class="headerbout">Contact us Now</h2> </p>   
+    </section>
+
+    <section class="featured-products">
+      <div class="containerform">
+        <h1>Contact Us</h1>
+        <form action="send-email.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <small>Format: 123-456-7890</small>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit" name="submit" >Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Milton E-commerce Site</p>
+  </footer>
+</body>
+</html>
